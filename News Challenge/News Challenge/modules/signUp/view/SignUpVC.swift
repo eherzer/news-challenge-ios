@@ -13,6 +13,7 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var tfBirthDate: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var tfRepeatPassword: UITextField!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     private var presenter: SignUpPresenter!
     
@@ -36,6 +37,7 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func btnSignUpClicked(_ sender: Any) {
+        activityIndicator.startAnimating()
         presenter.signUp(name: tfName.text, email: tfEmail.text, bithDate: tfBirthDate.text, password: tfPassword.text, repeatPassword: tfRepeatPassword.text)
     }
     
@@ -50,6 +52,7 @@ extension SignUpVC: SignUpViewProtocol {
     }
     
     func showError(message: String) {
+        activityIndicator.stopAnimating()
         presentAlert(message: message)
     }
 }

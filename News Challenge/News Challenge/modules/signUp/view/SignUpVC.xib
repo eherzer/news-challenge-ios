@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="News_Challenge" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="bla-cT-no6" id="k02-0E-CQv"/>
                 <outlet property="tfBirthDate" destination="ENd-ak-55D" id="Lqr-SD-DBP"/>
                 <outlet property="tfEmail" destination="gKA-lb-MRa" id="dM2-xv-Z8l"/>
                 <outlet property="tfName" destination="r90-TE-mcK" id="PFE-9i-ohr"/>
@@ -129,14 +130,22 @@
                         <constraint firstItem="2Ol-9u-PAn" firstAttribute="top" secondItem="VyF-s3-E5G" secondAttribute="top" id="yPO-gY-l05"/>
                     </constraints>
                 </scrollView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="bla-cT-no6">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="VyF-s3-E5G" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="86T-C9-TEh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VyF-s3-E5G" secondAttribute="trailing" id="DsT-z0-yLi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bla-cT-no6" secondAttribute="trailing" id="Roh-JN-Eqi"/>
                 <constraint firstItem="VyF-s3-E5G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fCt-hR-yoS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bla-cT-no6" secondAttribute="bottom" id="k9q-f6-ZTZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VyF-s3-E5G" secondAttribute="bottom" id="l9s-fl-hXB"/>
+                <constraint firstItem="bla-cT-no6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sIw-AT-hHt"/>
+                <constraint firstItem="bla-cT-no6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tmZ-KZ-bs3"/>
             </constraints>
             <point key="canvasLocation" x="97" y="104"/>
         </view>
