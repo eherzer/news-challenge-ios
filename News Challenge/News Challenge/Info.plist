@@ -41,5 +41,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>BASE_URL</key>
+	<string>https://mesa-news-api.herokuapp.com</string>
 </dict>
 </plist>
