@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="News_Challenge" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="f1t-lZ-h5p" id="koq-Pe-Miu"/>
                 <outlet property="tfEmail" destination="Iqj-ea-zDt" id="8lY-Vr-3hk"/>
                 <outlet property="tfPassword" destination="UwJ-dr-C2j" id="h0i-fk-qSQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -56,11 +57,17 @@
                         <action selector="btnSignUpClicked:" destination="-1" eventType="touchUpInside" id="By2-wd-m0l"/>
                     </connections>
                 </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="f1t-lZ-h5p">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f1t-lZ-h5p" secondAttribute="trailing" id="2ya-rE-GYk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kAH-qH-3d5" secondAttribute="trailing" constant="16" id="3o1-yS-dVQ"/>
+                <constraint firstItem="f1t-lZ-h5p" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7rf-Jr-5m2"/>
                 <constraint firstItem="ZBm-Fq-BJm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="9yx-mi-1cs"/>
                 <constraint firstItem="zTy-yK-7YL" firstAttribute="top" secondItem="kAH-qH-3d5" secondAttribute="bottom" constant="8" id="C9H-PB-POD"/>
                 <constraint firstItem="Iqj-ea-zDt" firstAttribute="top" secondItem="ZBm-Fq-BJm" secondAttribute="bottom" constant="32" id="Eoa-aw-N6e"/>
@@ -74,8 +81,10 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zTy-yK-7YL" secondAttribute="trailing" constant="16" id="ZcY-u3-yAq"/>
                 <constraint firstItem="UwJ-dr-C2j" firstAttribute="top" secondItem="Iqj-ea-zDt" secondAttribute="bottom" constant="16" id="cHo-UY-juY"/>
                 <constraint firstItem="Iqj-ea-zDt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="fhu-rc-jY5"/>
+                <constraint firstItem="f1t-lZ-h5p" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iYN-9M-6cn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Iqj-ea-zDt" secondAttribute="trailing" constant="16" id="pVI-rc-Q2p"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UwJ-dr-C2j" secondAttribute="trailing" constant="16" id="tGY-Ns-uN7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="f1t-lZ-h5p" secondAttribute="bottom" id="tch-iU-CjT"/>
                 <constraint firstItem="kAH-qH-3d5" firstAttribute="top" secondItem="UwJ-dr-C2j" secondAttribute="bottom" constant="16" id="vB0-nL-R4n"/>
                 <constraint firstItem="ZSF-eM-ZZw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="w9k-iw-lht"/>
             </constraints>

@@ -10,6 +10,7 @@ import UIKit
 class LoginVC: UIViewController {
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     private var presenter: LoginPresenter!
     
@@ -20,6 +21,7 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func btnSignInClicked(_ sender: Any) {
+        activityIndicator.startAnimating()
         presenter.signIn(email: tfEmail.text, password: tfPassword.text)
     }
     
@@ -36,6 +38,7 @@ extension LoginVC: LoginViewProtocol {
     }
     
     func showError(message: String) {
+        activityIndicator.stopAnimating()
         presentAlert(message: message)
     }
 }
