@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,6 +34,7 @@
 		A927E2BF25ADD513003E2F60 /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A927E2BE25ADD513003E2F60 /* SignUpService.swift */; };
 		A927E2C525ADD53D003E2F60 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A927E2C325ADD53D003E2F60 /* SignUpVC.swift */; };
 		A927E2C625ADD53D003E2F60 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A927E2C425ADD53D003E2F60 /* SignUpVC.xib */; };
+		A962A2A325AF0524001531C2 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962A2A225AF0524001531C2 /* BaseService.swift */; };
 		A9A2DA3525AE6B490047F95E /* SignUpFormError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2DA3425AE6B490047F95E /* SignUpFormError.swift */; };
 		A9A2DA3D25AE72270047F95E /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2DA3C25AE72270047F95E /* Util.swift */; };
 		A9A2DA4325AE7B170047F95E /* String+Trimm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2DA4225AE7B170047F95E /* String+Trimm.swift */; };
@@ -99,6 +100,7 @@
 		A927E2BE25ADD513003E2F60 /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
 		A927E2C325ADD53D003E2F60 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		A927E2C425ADD53D003E2F60 /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
+		A962A2A225AF0524001531C2 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		A9A2DA3425AE6B490047F95E /* SignUpFormError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormError.swift; sourceTree = "<group>"; };
 		A9A2DA3C25AE72270047F95E /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		A9A2DA4225AE7B170047F95E /* String+Trimm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Trimm.swift"; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				A927E24F25AD37FD003E2F60 /* AppPreferences.swift */,
 				A9A2DA3C25AE72270047F95E /* Util.swift */,
 				A9A2DA5025AE861F0047F95E /* DateUtils.swift */,
+				A962A2A225AF0524001531C2 /* BaseService.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -386,7 +389,6 @@
 				4552CF45C665F949EBBF8413 /* Pods-News ChallengeTests.debug.xcconfig */,
 				4D2BE46CADE4D8909022C7C0 /* Pods-News ChallengeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -653,6 +655,7 @@
 				A927E27125AD3B00003E2F60 /* SplashPresenter.swift in Sources */,
 				A927E2BA25ADD49A003E2F60 /* SignUpPresenter.swift in Sources */,
 				A927E27B25AD3E16003E2F60 /* LoginPresenterProtocol.swift in Sources */,
+				A962A2A325AF0524001531C2 /* BaseService.swift in Sources */,
 				A9A2DA4325AE7B170047F95E /* String+Trimm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
